@@ -1,0 +1,143 @@
+* {/*chamando toda a página*/
+    margin: 0;/*definindo a margem em 0*/
+    padding: 0;/*definindo a distancia da borda em 0*/
+    box-sizing: border-box;/*centralizando o conteúdo*/
+}
+
+header,
+section h2,
+section h3{
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+body, 
+input, 
+textarea{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{/*chamando o cabeçalho*/
+    padding: 16px 0;/*definindo distância da borda em 16px*/
+    background-color: #182c61;/*definindo cor de fundo do cabeçalho*/
+    color: #ecf0f1;/*definindo cor da fonte*/
+}
+
+header nav li{/*chamando o li que esta dentro do nav, que esta dentro do cabeçalho*/
+    display: inline; /*definindo que o li vai ficar lado a lado*/
+    margin-left: 16px; /*definindo a distancia entre eles*/
+    font-size: 18px;/*definindo tamanho da fonte dos li*/
+}
+
+header nav li a{/*chamando meu a que esta dentro do li que esta dentro do nav que esta dentro do cabeçalho*/
+    color: #ecf0f1;/*definindo cor da fonde do a*/
+    text-decoration: none;/*tirando o underline dos links*/
+}
+
+.container{/*chamando a classe container criada através da div*/
+    max-width: 1280px;/*defininfo que o maximo que o cabeçalho vai esticar em em 1280px*/
+    width: 100%;/*forçando para que sempr fique na resolução maxima*/
+    margin: 0 auto;/*definindo as margens do cabeçalho*/
+}
+
+header .container{/*chamando o container que ta dentro do header*/
+    display: flex;/*definindo que o que esta no container vai dicar lado a lado*/
+    align-items: center;/*definindo que o conteudo deve ser centralizado*/
+    justify-content: space-between;/*defininfo que o primeiro item sejá deslocado para o começo do eixo principal e o segundo para o final, ou seja, lados opostos*/
+}
+
+section .container{/*chamando o container dentro do section*/
+    display: flex;/*definindo que o conteúdo vai ficar lado a lado*/
+    justify-content: space-between;/*definindo que o conteúdo e a imagem vão estar em lados opostos*/
+    align-items: flex-start;/*definindo que o conteúdo vai se manter to inicio da página*/
+}
+
+.brands-list img{/*chamando imagens dentro da classe brands-list*/
+    height: 24px;/*tamanho das imagens*/
+    margin-right: 8px;
+}
+
+.brands-list li{/*chamando a lista que tenho dentro da classe*/
+    display: inline;/*colocando um do lado do outro*/
+}
+
+section{
+    padding: 24px 0; /*definindo um espaçamento de 24px na parte superior e inferio e zero nas laterais*/
+    color: #182c61;
+}
+
+
+section h2{/*chamando titulo h2 dentro da section*/
+    margin-bottom: 16px;/*a margem do titulo da sessão é de 8px*/
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+.store-front{
+    margin-right: 32px;
+}
+
+.social-links img{
+    height: 24px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+#contact .container{
+    display: block;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    margin-bottom: 8px;
+    width: 320px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+
+}
+
+section h3{
+    margin-bottom: 16px;
+
+}
+
+form button{
+    background-color: #182c61;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #29489e;
+}
+
+input:focus, textarea:focus{
+    outline-color: #182c61;
+}
+
+footer{
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
